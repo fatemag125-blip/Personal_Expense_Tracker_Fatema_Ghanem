@@ -1,11 +1,6 @@
 import pandas as pd
 import streamlit as st
 
-df = pd.read_csv(
-            "spend_tracker.csv",
-            parse_dates=["Date"]
-        )
-
 # Function to calculate total amount of expenses 
 def calculate_total_expenses(df):
     return df["Amount"].sum()
